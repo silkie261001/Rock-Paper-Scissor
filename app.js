@@ -23,17 +23,13 @@ function convertToWord(letter) {
 function win(user, computer) {
     userScore++;
     userScore_span.innerHTML = userScore;
-    const userName = ' (user)'.fontsize(3).sup();
-    const compName = ' (comp)'.fontsize(3).sup();
-    result_p.innerHTML = `<p>${convertToWord(user)}${userName} beats ${convertToWord(computer)}${compName}. You win!🏆🏆</p>`;
+    result_p.innerHTML = `<p>${convertToWord(user)} beats ${convertToWord(computer)}. You win!!🏆🏆</p>`;
   }
   
   function loses(user, computer) {
     computerScore++;
     computerScore_span.innerHTML = computerScore;
-    const userName = ' (user)'.fontsize(3).sup();
-    const compName = ' (comp)'.fontsize(3).sup();
-    result_p.innerHTML = `<p>${convertToWord(computer)}${compName} beats ${convertToWord(user)}${userName}. You lose...😢😢</p>`;
+    result_p.innerHTML = `<p>${convertToWord(computer)} beats ${convertToWord(user)}. You lose...😢😢</p>`;
   }
 
   function draw(user, computer) {

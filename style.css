@@ -60,6 +60,10 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+img {
+    height: 66px;
+    width: auto;
+}
 .choice {
     display: inline-block;
     border: 4px solid white;
